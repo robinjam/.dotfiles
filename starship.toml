@@ -1,0 +1,36 @@
+[cmake]
+disabled = true
+
+[cmd_duration]
+disabled = false
+
+[directory]
+read_only = " 󰌾"
+
+[docker_context]
+disabled = true
+
+[git_branch]
+symbol = " "
+
+[hostname]
+ssh_symbol = " "
+
+[nodejs]
+disabled = true
+
+[package]
+disabled = true
+
+[python]
+disabled = true
+
+[ruby]
+disabled = true
+
+[rust]
+disabled = true
+
+[time]
+disabled = false
+format = "[$time]($style) "
