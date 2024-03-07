@@ -3,12 +3,13 @@ export EDITOR=nvim
 source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
 eval "$(rbenv init - zsh)"
 eval "$(starship init zsh)"
+export PATH=$PATH:~/.dotfiles/bin
 
 if type gds > /dev/null
 then
   export PATH=$PATH:${HOME}/govuk/govuk-docker/exe
   source <(gds shell-completion zsh)
-  /usr/bin/ssh-add --apple-use-keychain .ssh/id_ed25519
+  /usr/bin/ssh-add --apple-use-keychain ~/.ssh/id_ed25519
   source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
 
   alias k=kubectl
