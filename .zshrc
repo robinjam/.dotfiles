@@ -19,4 +19,14 @@ then
     export AWS_REGION=eu-west-1
     k config use-context $1
   }
+
+  clone() {
+    REPO=$(gh repo list alphagov --no-archived --topic govuk --limit 1000 --json name -q ".[].name" | fzf)
+    if [[ ! -z $REPO ]]
+    then
+      cd ~/govuk
+      git clone git@github.com:alphagov/$REPO.git
+      cd $REPO
+    fi
+  }
 fi
