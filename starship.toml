@@ -1,3 +1,6 @@
+[aws]
+disabled = true
+
 [cmake]
 disabled = true
 
@@ -10,11 +13,20 @@ read_only = " 󰌾"
 [docker_context]
 disabled = true
 
+[gcloud]
+disabled = true
+
 [git_branch]
 symbol = " "
 
+[golang]
+disabled = true
+
 [hostname]
 ssh_symbol = " "
+
+[kubernetes]
+disabled = false
 
 [nodejs]
 disabled = true
