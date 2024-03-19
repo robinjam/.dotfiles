@@ -21,6 +21,11 @@ then
     k config use-context $1
   }
 
+  sw() {
+    cd ~/govuk
+    cd $(ls -d * | fzf)
+  }
+
   clone() {
     REPO=$(gh repo list alphagov --no-archived --topic govuk --limit 1000 --json name -q ".[].name" | fzf)
     if [[ ! -z $REPO ]]
