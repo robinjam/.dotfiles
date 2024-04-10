@@ -12,6 +12,8 @@ then
   /usr/bin/ssh-add --apple-use-keychain ~/.ssh/id_ed25519
   source "/usr/local/Caskroom/google-cloud-sdk/latest/google-cloud-sdk/path.zsh.inc"
 
+  export NOTIFY_CREDENTIALS=~/notify/notifications-credentials
+
   alias k=kubectl
   source <(kubectl completion zsh)
   compdef k=kubectl
@@ -36,3 +38,5 @@ then
     fi
   }
 fi
+
+export GPG_TTY=$(tty)
