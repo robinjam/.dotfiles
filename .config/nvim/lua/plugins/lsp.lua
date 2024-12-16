@@ -13,6 +13,7 @@ local servers = {
   pyright = {},
   rust_analyzer = {},
   terraformls = {},
+  ts_ls = {},
 }
 
 return {
