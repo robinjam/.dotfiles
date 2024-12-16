@@ -34,7 +34,7 @@ return {
     },
   },
   keys = {
-    { "<leader>f", function() vim.lsp.buf.format() end, desc = "[F]ormat buffer" }
+    { "<leader>f", function() vim.lsp.buf.format { timeout_ms = 5000 } end, desc = "[F]ormat buffer" }
   },
   config = function()
     local lspconfig = require("lspconfig")
