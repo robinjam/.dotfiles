@@ -13,9 +13,9 @@ return {
     { "<leader>sh", "<cmd>Telescope help_tags<cr>",             desc = "[S]earch [h]elp" },
     { "<leader>sd", "<cmd>Telescope lsp_document_symbols<cr>",  desc = "[S]earch [d]ocument symbols" },
     { "<leader>sw", "<cmd>Telescope lsp_workspace_symbols<cr>", desc = "[S]earch [w]orkspace symbols" },
-    { "gd",         "<cmd>Telescope lsp_definitions<cr>",       desc = "[G]oto [D]efinition" },
-    { "gr",         "<cmd>Telescope lsp_references<cr>",        desc = "[G]oto [R]eferences" },
-    { "gI",         "<cmd>Telescope lsp_implementations<cr>",   desc = "[G]oto [I]mplementation" },
+    { "<C-]>",      "<cmd>Telescope lsp_definitions<cr>",       desc = "Goto definition" },
+    { "grr",        "<cmd>Telescope lsp_references<cr>",        desc = "Goto references" },
+    { "gri",        "<cmd>Telescope lsp_implementations<cr>",   desc = "Goto implementation" },
   },
   config = function()
     local telescope = require("telescope")
@@ -39,6 +39,9 @@ return {
         live_grep = { theme = "ivy" },
         lsp_document_symbols = { theme = "ivy" },
         lsp_workspace_symbols = { theme = "ivy" },
+        lsp_definitions = { theme = "ivy" },
+        lsp_references = { theme = "ivy" },
+        lsp_implementations = { theme = "ivy" },
       },
       extensions = {
         fzf = {},
