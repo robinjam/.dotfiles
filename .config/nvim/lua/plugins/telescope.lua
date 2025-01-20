@@ -17,6 +17,7 @@ return {
     { "grr",        "<cmd>Telescope lsp_references<cr>",        desc = "Goto references" },
     { "gri",        "<cmd>Telescope lsp_implementations<cr>",   desc = "Goto implementation" },
   },
+  lazy = false,
   config = function()
     local telescope = require("telescope")
     -- Not using opts because the call to require causes the plugin to be eagerly loaded
