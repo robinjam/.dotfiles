@@ -22,9 +22,6 @@ disabled = true
 [hostname]
 ssh_symbol = " "
 
-[kubernetes]
-disabled = false
-
 [nodejs]
 disabled = true
 
@@ -39,6 +36,9 @@ disabled = true
 
 [rust]
 disabled = true
+
+[shell]
+disabled = false
 
 [terraform]
 disabled = true
