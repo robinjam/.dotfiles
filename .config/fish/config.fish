@@ -23,8 +23,6 @@ if status is-interactive
 
     set -x EDITOR nvim
     starship init fish | source
-    rbenv init - fish | source
-    starship init fish | source
     set -x PATH $PATH:~/.dotfiles/bin
 
     if type gds > /dev/null
