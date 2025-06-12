@@ -1,0 +1,38 @@
+[user]
+  name = James Robinson
+  email = james@robinjam.net
+  signingKey = 77B6FD4F60F6D8D2
+
+[commit]
+  verbose = true
+
+[diff]
+  renames = copies
+
+[interactive]
+  singleKey = true
+
+[merge]
+  conflictStyle = zdiff3
+
+[push]
+  autoSetupRemote = true
+
+[rebase]
+  autoStash = true
+  missingCommitsCheck = true
+
+[status]
+  showUntrackedFiles = all
+
+[url "git@github.com:"]
+  insteadOf = "gh:"
+
+[url "git@github.com:robinjam/"]
+  insteadOf = "r:"
+
+[url "git@github.com:robinjam-games/"]
+  insteadOf = "rg:"
+
+[url "git@github.com:alphagov/"]
+  insteadOf = "a:"
