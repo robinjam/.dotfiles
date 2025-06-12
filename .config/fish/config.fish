@@ -9,6 +9,7 @@ if status is-interactive
     abbr --add gap 'git add --patch'
     abbr --add gc 'git commit'
     abbr --add gca 'git commit --amend --no-edit'
+    abbr --add gcl 'git clone'
     abbr --add gco 'git checkout'
     abbr --add gd 'git diff'
     abbr --add gdc 'git diff --cached'
