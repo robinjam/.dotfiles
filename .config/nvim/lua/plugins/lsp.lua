@@ -1,5 +1,6 @@
 local servers = {
   clangd = {},
+  cssls = {},
   html = {
     settings = {
       html = {
