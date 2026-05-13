@@ -19,3 +19,6 @@ opt.smartcase = true
 opt.ignorecase = true
 
 opt.inccommand = "split"
+
+-- Required for SQL highlighting in strings to work
+vim.api.nvim_set_hl(0, "@lsp.type.string.rust", {})
