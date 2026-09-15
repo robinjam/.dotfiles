@@ -38,12 +38,12 @@ return {
     { "<leader>f", function() vim.lsp.buf.format { timeout_ms = 5000 } end, desc = "[F]ormat buffer" }
   },
   config = function()
-    local lspconfig = require("lspconfig")
     local capabilities = require("blink.cmp").get_lsp_capabilities()
 
     for server, config in pairs(servers) do
       config.capabilities = capabilities
-      lspconfig[server].setup(config)
+      vim.lsp.config(server, config)
+      vim.lsp.enable(server)
     end
 
     vim.api.nvim_create_autocmd("BufWritePre", {
